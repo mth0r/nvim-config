@@ -10,7 +10,7 @@ return require('packer').startup(function(use)
 
     --- Telescope
     use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.1',
+        'nvim-telescope/telescope.nvim', tag = '0.1.8',
         -- or                            , branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
@@ -20,7 +20,7 @@ return require('packer').startup(function(use)
     -- Atom onedark colorscheme
     use 'navarasu/onedark.nvim'
     -- Rosepine Colorscheme
-    use({ 'rose-pine/neovim', as = 'rose-pine' })
+    -- use({ 'rose-pine/neovim', as = 'rose-pine' })
     -- GruvBox
     use('gruvbox-community/gruvbox')
     use('sainnhe/gruvbox-material')
@@ -70,24 +70,24 @@ return require('packer').startup(function(use)
 
 
     -- ChatGPT
-    use({
-        "jackMort/ChatGPT.nvim",
-        config = function()
-            require("chatgpt").setup({
-                -- optional configuration
-                keymaps = {
-                    submit = "<C-s>"
-                }
-            })
-        end,
-        requires = {
-            "MunifTanjim/nui.nvim",
-            "nvim-lua/plenary.nvim",
-            "nvim-telescope/telescope.nvim"
-        }
-    })
+    --use({
+    --    "jackMort/ChatGPT.nvim",
+    --    config = function()
+    --        require("chatgpt").setup({
+    --            -- optional configuration
+    --            keymaps = {
+    --                submit = "<C-s>"
+    --            }
+    --        })
+    --    end,
+    --    requires = {
+    --        "MunifTanjim/nui.nvim",
+    --        "nvim-lua/plenary.nvim",
+    --        "nvim-telescope/telescope.nvim"
+    --    }
+    --})
 
     -- Github Copilot
-    use('github/copilot.vim')
+    --use('github/copilot.vim')
 
 end)
